@@ -1,0 +1,12 @@
+.wrapper {
+    .collapse {
+        border: 1px solid #ccc;
+        border-top: 0;
+    }
+    .accordion-header {
+        padding: 10px 15px;
+        background: #333333;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
