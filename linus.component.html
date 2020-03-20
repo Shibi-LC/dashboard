@@ -1,0 +1,50 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+      <div class="row">
+        <div class="col-xl-4 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-muted mb-0">Total Linus Command Used</h5>
+              <span class="h2 font-weight-bold mb-0">{{totalCommands}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-muted mb-0">Mostly Used Command</h5>
+              <span class="h2 font-weight-bold mb-0">[-{{mostUsedCommand}}] -- {{mostUsedCommandTimes}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-muted mb-0">Traffic</h5>
+              <span class="h2 font-weight-bold mb-0">350,897</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <table class="table table-striped table-bordered table-responsive w-100">
+    <thead class="thead-light">
+      <th>User Name</th>
+      <th>Host Name</th>
+      <th>Date &amp; Time</th>
+      <th>Version</th>
+      <th>OS</th>
+      <th>Last Used Option</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of filteredData[command]">
+        <td *ngFor="let user of users">{{user.userName}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
